@@ -34,7 +34,9 @@ module.exports = (_, argsv) => ({
       name: 'host',
       filename: 'remoteEntry.js',
       remotes: {},
-      exposes: {},
+      exposes: {
+        './Button': './src/Button'
+      },
       shared: require('./package.json').dependencies
     }),
     new HtmlWebpackPlugin({
