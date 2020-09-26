@@ -11,7 +11,7 @@ module.exports = (_, argsv) => ({
     hotOnly: true
   },
   output: {
-    publicPath: argsv.mode === development ? 'http://localhost:8080/' : 'https://mf-host-app.vercel.app/'
+    publicPath: argsv.mode === 'development' ? 'http://localhost:8080/' : 'https://mf-host-app.vercel.app/'
   },
   module: {
     rules: [
